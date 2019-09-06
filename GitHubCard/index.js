@@ -55,35 +55,46 @@ function informationCard(information){
   const newCard = document.createElement("div");
   newCard.classList.add("card");
 
+  const img = document.createElement("img");
+  img.src = information.data.avatar_url
+
   const cardInfo = document.createElement("div");
   newCard.append(cardInfo);
   cardInfo.classList.add("card-info");
-
+  
   const name = document.createElement("h3");
   cardInfo.append(name);
   name.classList.add("name");
+  name.textContent = "information.data.name"
 
   const username = document.createElement("p");
   cardInfo.append(username);
   username.classList.add("username");
+  username.textContent = "information.data.login"
 
   const location = document.createElement("p");
   cardInfo.append(location);
+  location.textContent = `Location: ${information.data.location}`;
 
   const profile = document.createElement("p");
   cardInfo.append(profile);
-
+  
   const profileLink = document.createElement("a");
   profile.append(profileLink);
+  profile.textContent = `Profile:`;
+  profileLink.href = information.data.html_url;
 
   const followers = document.createElement("p");
   cardInfo.append(followers);
+  followers.textContent = `Followers: ${information.data.followers}`
 
   const following = document.createElement("p");
   cardInfo.append(following);
+  following.textContent = `Following: ${information.data.following}`
   
   const bio = document.createElement("p");
   cardInfo.append(bio);
+  bio.textContent = `Bio: ${information.data.bio}`
 
   console.log(newCard);
   return newCard;
