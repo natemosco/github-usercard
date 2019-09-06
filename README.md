@@ -27,9 +27,9 @@ In this project we are going to be accessing the GitHub API and building a socia
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-* [ ] Add your project manager as a reviewer on the pull-request
-* [ ] Your project manager will count the project as complete by merging the branch back into master.
+* [ X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [ X] Add your project manager as a reviewer on the pull-request
+* [ X] Your project manager will count the project as complete by merging the branch back into master.
 
 ### Preprocessor Setup
 
@@ -37,7 +37,7 @@ In this project we are going to be accessing the GitHub API and building a socia
 
 ### Part 1: Requesting Data from the GitHub API
 * Include the script element linking the `axios` library in your HTML. If you do not remember the code you can find it here: https://github.com/axios/axios
-* Follow the instructions found in the GitHubCard/index.js file to request data from the GitHub API.
+* Follow the instructions fountd in the GitHubCard/index.js file to request data from the GitHub API.
 
 ### Part 2: Create the component function
 
